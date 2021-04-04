@@ -6,7 +6,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MarkdownModule } from 'ngx-markdown';
 import { FormsModule } from '@angular/forms';
 import { IconModule } from './icon/icon.module';
-import { NgxMasonryModule } from 'ngx-masonry';
 import { RouterModule } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
 import { ConfirmDialogModule } from './confirm-dialog/confirm-dialog.module';
@@ -43,7 +42,6 @@ import { EmptyStateComponent } from './empty-state/empty-state.component';
     FlexLayoutModule,
     MarkdownModule,
     FormsModule,
-    NgxMasonryModule,
     // Modules
     MatModule,
     IconModule,
