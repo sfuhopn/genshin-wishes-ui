@@ -27,6 +27,7 @@ import { CookieService } from 'ngx-cookie-service';
 
 import '@angular/common/locales/global/fr';
 import { CoreModule } from './core/core.module';
+import { LandingModule } from './landing/landing.module';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(
@@ -64,6 +65,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     // Ours
     AuthModule,
     CoreModule,
+    LandingModule,
     AppRoutingModule,
   ],
   providers: [

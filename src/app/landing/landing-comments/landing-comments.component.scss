@@ -1,0 +1,30 @@
+.image-wrapper {
+  position: relative;
+  margin-top: 300px;
+}
+
+.wrapper {
+  position: relative;
+  margin: 20px 20px 20px 20px;
+  padding: 52px 16px 16px 16px;
+  border-radius: 4px;
+  min-height: 440px;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+.quote {
+  position: absolute;
+  top: -20px;
+  left: 36px;
+  z-index: 2;
+}
+
+.bennet {
+  position: absolute;
+  bottom: -152px;
+  right: 0;
+  width: 280px;
+}

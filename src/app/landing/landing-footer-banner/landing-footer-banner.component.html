@@ -1,0 +1,47 @@
+<div fxLayout="column" class="wrapper" fxLayoutGap="48px">
+  <div class="img-container">
+    <img src="assets/landing/Join-us-Keqing.png" />
+  </div>
+
+  <div fxLayout="row">
+    <div
+      fxFlexOffset="calc(1/12 * 100% - 20px)"
+      fxFlex="0 1 calc(3/12 * 100% - 20px)"
+      fxFlexOffset.lt-md
+      fxFlex.lt-md
+      [ngStyle]="{ 'text-align': 'left' }"
+      [ngStyle.lt-md]="{ 'text-align': 'center' }"
+    >
+      {{ "landing.footerBanner.joinUs" | translate }}
+    </div>
+  </div>
+
+  <div fxLayout="row">
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxFlexOffset="calc(1/12 * 100% - 20px)"
+      fxFlex="0 1 calc(4/12 * 100% - 20px)"
+      fxFlexOffset.lt-md
+      fxFlex.lt-md
+      fxLayoutGap="20px"
+      fxLayoutAlign="center"
+    >
+      <a mat-raised-button color="accent" fxFlex.lt-sm>
+        {{ "landing.getStarted" | translate }}
+      </a>
+
+      <a
+        mat-stroked-button
+        color="primary"
+        [href]="discordUrl"
+        target="_blank"
+        gaClick="discord_discord"
+      >
+        <fa-icon [icon]="['fab', 'discord']"></fa-icon>
+        &nbsp;
+        {{ "nav.discord.label" | translate }}
+      </a>
+    </div>
+  </div>
+</div>

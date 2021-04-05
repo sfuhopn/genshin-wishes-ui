@@ -378,6 +378,14 @@ export class GenshinWishesService {
       });
   }
 
+  getUsersCount(): Observable<number> {
+    return this._http.get<number>('/api/public/users/count');
+  }
+
+  getWishesCount(): Observable<number> {
+    return this._http.get<number>('/api/public/wishes/count');
+  }
+
   private calculateGapFor(
     wishes: (Wish & { pity: number })[],
     rankType: 4 | 5

@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+}
+
+.content {
+  display: block;
+  padding: 0 18px;
+  width: 256px;
+  margin: auto;
+}
+
+.star {
+  display: block;
+  width: calc(100% + 36px);
+  height: 24px;
+  z-index: 1;
+
+  app-star-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+mat-divider {
+  border-top-width: 2px;
+  width: calc(100% + 20px);
+  margin: 0 -20px;
+
+  position: absolute;
+  top: calc(50% - 1px);
+
+  z-index: 0;
+}

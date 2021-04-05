@@ -1,0 +1,36 @@
+<div
+  ngClass.lt-md="mobile"
+  fxLayout="row"
+  fxLayoutGap="12px"
+  fxLayoutAlign="start center"
+  class="wrapper"
+>
+  <app-logo></app-logo>
+
+  <h1 fxLayout="column" class="title-wrapper">
+    <span class="title">{{ "app.titleShort" | translate }}</span>
+    <span class="subtitle">{{ "app.description" | translate }}</span>
+  </h1>
+
+  <span fxFlex></span>
+
+  <div fxLayoutGap="32px" fxShow.gt-sm fxHide.lt-md>
+    <a mat-button>{{ "publicStats.title" | translate }}</a>
+    <a mat-button>{{ "faq.title" | translate }}</a>
+    <a mat-button>{{ "landing.isItSafe" | translate }}</a>
+    <a
+      mat-raised-button
+      color="accent"
+      gaClick="top_sign_in"
+      [routerLink]="['/login']"
+    >
+      {{ "app.signIn" | translate }}
+    </a>
+  </div>
+
+  <div fxHide.gt-sm fxShow.lt-md>
+    <a mat-button (click)="openMenu()">
+      {{ "app.menu" | translate }}
+    </a>
+  </div>
+</div>

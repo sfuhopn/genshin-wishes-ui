@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 100px;
+  padding: 100px 20px 64px 20px;
+}
+
+.img-container {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  width: 320px;
+  bottom: -36px;
+  left: calc(50% - 160px);
+}
+
+a {
+  min-width: 180px;
+}

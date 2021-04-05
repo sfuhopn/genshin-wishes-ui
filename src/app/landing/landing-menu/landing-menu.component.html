@@ -1,0 +1,34 @@
+<div class="wrapper" fxLayout="column">
+  <div fxLayout="row">
+    <app-logo></app-logo>
+
+    <span fxFlex></span>
+
+    <button type="button" mat-icon-button class="close-button" mat-dialog-close>
+      <fa-icon icon="times"></fa-icon>
+    </button>
+  </div>
+
+  <div
+    fxLayoutGap="32px"
+    fxLayout="column"
+    fxFlex
+    fxLayoutAlign="center center"
+  >
+    <a mat-button>{{ "publicStats.title" | translate }}</a>
+    <a mat-button>{{ "faq.title" | translate }}</a>
+    <a mat-button>{{ "landing.isItSafe" | translate }}</a>
+  </div>
+
+  <div>
+    <a
+      mat-raised-button
+      color="accent"
+      fxFlex
+      gaClick="menu_sign_in"
+      [routerLink]="['/login']"
+    >
+      {{ "app.signIn" | translate }}
+    </a>
+  </div>
+</div>

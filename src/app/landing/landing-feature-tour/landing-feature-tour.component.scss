@@ -1,0 +1,43 @@
+.feature-wrapper {
+  padding: 40px 20px;
+}
+
+.wrapper {
+  margin-top: 300px;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 0;
+
+  img {
+    position: absolute;
+    bottom: -480px;
+    width: 100%;
+  }
+}
+
+app-landing-feature {
+  min-height: 428px;
+}
+
+.feature-list {
+  padding: 0 4px;
+}
+
+app-landing-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+
+.feature-progress {
+  position: relative;
+  bottom: -40px;
+  left: -20px;
+  width: calc(100% + 40px);
+
+  mat-progress-bar {
+    height: 2px;
+  }
+}

@@ -1,0 +1,44 @@
+<div fxLayout="column">
+  <h2>{{ "landing.security.title" | translate }}</h2>
+
+  <div class="security-slider">
+    <app-landing-security-card
+      icon="download"
+      subIcon="ban"
+      [description]="'landing.security.noInstallation' | translate"
+    ></app-landing-security-card>
+
+    <app-landing-security-card
+      icon="key"
+      [description]="'landing.security.temporaryKey' | translate"
+    ></app-landing-security-card>
+
+    <app-landing-security-card
+      icon="user-shield"
+      [description]="'landing.security.authorization' | translate"
+    ></app-landing-security-card>
+
+    <app-landing-security-card
+      icon="lock"
+      [description]="'landing.security.ssl' | translate"
+    ></app-landing-security-card>
+  </div>
+
+  <div fxLayout="column" fxLayoutGap="24px" class="buttons-wrapper">
+    <a mat-stroked-button color="accent">
+      {{ "landing.security.learnMore" | translate }}
+    </a>
+
+    <a
+      mat-stroked-button
+      color="primary"
+      [href]="discordUrl"
+      target="_blank"
+      gaClick="discord_discord"
+    >
+      <fa-icon [icon]="['fab', 'discord']"></fa-icon>
+      &nbsp;
+      {{ "nav.discord.label" | translate }}
+    </a>
+  </div>
+</div>

@@ -30,6 +30,13 @@ import { faFlag } from '@fortawesome/free-solid-svg-icons/faFlag';
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons/faShareAlt';
+import { faKey } from '@fortawesome/free-solid-svg-icons/faKey';
+import { faUserShield } from '@fortawesome/free-solid-svg-icons/faUserShield';
+import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
+import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload';
+import { faBan } from '@fortawesome/free-solid-svg-icons/faBan';
+import { faChartPie } from '@fortawesome/free-solid-svg-icons/faChartPie';
+import { faLaptopHouse } from '@fortawesome/free-solid-svg-icons/faLaptopHouse';
 
 @NgModule({
   exports: [FontAwesomeModule],
@@ -63,6 +70,13 @@ export class IconModule {
       faHeart,
       faCheckCircle,
       faShareAlt,
+      faKey,
+      faUserShield,
+      faLock,
+      faDownload,
+      faBan,
+      faChartPie,
+      faLaptopHouse,
       faTimesCircle
     );
   }

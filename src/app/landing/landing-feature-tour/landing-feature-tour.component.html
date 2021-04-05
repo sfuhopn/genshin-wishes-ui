@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="image-wrapper">
+    <img src="assets/landing/barbara.png" />
+  </div>
+
+  <div class="feature-wrapper" fxLayout="column" fxLayoutGap="16px">
+    <app-landing-feature
+      [img]="features[current].img"
+      [description]="features[current].description"
+    ></app-landing-feature>
+
+    <span fxFlex style="margin: 0"></span>
+
+    <div
+      class="feature-list"
+      fxLayout="row"
+      fxLayoutAlign="center"
+      fxLayoutGap="16px"
+    >
+      <app-landing-icon
+        *ngFor="let feature of features; let index = index"
+        [icon]="feature.icon"
+        [active]="current === index"
+        (click)="current = index; reset$.next()"
+      ></app-landing-icon>
+    </div>
+
+    <div class="feature-progress">
+      <mat-progress-bar
+        color="accent"
+        mode="determinate"
+        [value]="progress"
+      ></mat-progress-bar>
+    </div>
+  </div>
+</div>

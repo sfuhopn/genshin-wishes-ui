@@ -1,0 +1,38 @@
+<div
+  class="wrapper"
+  fxLayout="column"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign="center center"
+  fxLayoutGap="48px"
+>
+  <div fxLayout="column" class="content-wrapper">
+    <h2 class="title">{{ "landing.hero.title" | translate }}</h2>
+    <h3 class="subtitle">{{ "landing.hero.subtitle" | translate }}</h3>
+
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxLayoutGap="24px"
+      class="actions"
+    >
+      <a
+        mat-raised-button
+        color="accent"
+        gaClick="hero_sign_in"
+        [routerLink]="['/login']"
+      >
+        {{ "landing.getStarted" | translate }}
+      </a>
+
+      <a mat-stroked-button color="accent">
+        <fa-icon icon="chart-bar"></fa-icon>
+        &nbsp;
+        {{ "publicStats.title" | translate }}
+      </a>
+    </div>
+
+    <span class="advice" [innerHTML]="'landing.hero.advice' | translate"></span>
+  </div>
+
+  <img fxHide.lt-md src="assets/landing/hero-banner.png" />
+</div>

@@ -8,7 +8,7 @@ import { LandingCardComponent } from './core/landing/landing-card/landing-card.c
 import { NotAuthGuard } from './auth/not-auth.guard';
 import { UrlSetupComponent } from './auth/url-setup/url-setup.component';
 import { MihoyoLinkGuard } from './auth/mihoyo-link.guard';
-import { LandingComponent } from './core/landing/landing.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
   {
@@ -21,10 +21,10 @@ const routes: Routes = [
         path: 'login',
         component: AuthComponent,
       },
-      {
-        path: '',
-        component: LandingCardComponent,
-      },
+      // {
+      //   path: '',
+      //   component: LandingCardComponent,
+      // },
     ],
   },
   {

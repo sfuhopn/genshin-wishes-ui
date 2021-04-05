@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <mat-divider></mat-divider>
+
+  <div
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+    class="content"
+  >
+    <div
+      class="users-counter"
+      [innerHTML]="
+        'landing.counters.users'
+          | translate: { users: ((usersCount$ | async) || 5000 | number) }
+      "
+    ></div>
+
+    <div class="text-primary star" fxLayoutAlign="center">
+      <app-star-icon></app-star-icon>
+    </div>
+
+    <div
+      class="wishes-counter"
+      [innerHTML]="
+        'landing.counters.wishes'
+          | translate: { wishes: ((wishesCount$ | async) || 3000000 | number) }
+      "
+    ></div>
+  </div>
+</div>

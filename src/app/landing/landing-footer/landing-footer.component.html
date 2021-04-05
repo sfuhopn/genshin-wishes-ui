@@ -1,0 +1,30 @@
+<div class="wrapper" fxLayout="column" fxLayoutGap="64px">
+  <div fxLayout="row">
+    <div
+      fxLayout="column"
+      fxFlex.lt-md
+      fxFlex="0 1 calc(4/12 * 100% - 20px)"
+      fxLayoutGap="8px"
+    >
+      <div fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+        <app-logo></app-logo>
+        <span class="title"> {{ "app.titleShort" | translate }}</span>
+      </div>
+
+      <div [innerHTML]="'landing.footer.content' | translate"></div>
+    </div>
+  </div>
+
+  <div
+    fxLayout="row"
+    fxLayout.lt-lg="column"
+    fxLayoutGap="4px"
+    class="disclaimer"
+  >
+    <span [innerHTML]="'footer.disclaimer' | translate"></span>
+
+    <span fxFlex></span>
+
+    <span [innerHTML]="'footer.claim' | translate"></span>
+  </div>
+</div>

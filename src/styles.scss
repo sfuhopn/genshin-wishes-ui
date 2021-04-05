@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "~ngx-toastr/toastr.css";
+@import "~flickity/dist/flickity.min.css";
 @import "theming";
 
 /* You can add global styles to this file, and also import other style files */
@@ -54,6 +55,10 @@ app-root {
   .cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper {
     width: 100%;
   }
+}
+
+.no-radius-dialog .mat-dialog-container {
+  border-radius: 0;
 }
 
 router-outlet + * {
